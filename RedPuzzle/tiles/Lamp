@@ -1,8 +1,11 @@
-return function(_text, _back)
+return function(_back, _text)
 	return {
 		type = "lamp";
-		check = function(_text, _back)
-			return _text == _text, _back == _back
+		text = _text;
+		back = _back;
+		char = "X";
+		power = function(self, _back, _text)
+			return self.text == _text and self.back == _back
 		end;
 	}
 end

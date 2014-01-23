@@ -1,0 +1,12 @@
+return function(_back, _text)
+	return {
+		type = "dust";
+		back = _back;
+		text = _text;
+		char = "+";
+		check = function(self, _back, _text)
+			self.back, self.text = _back, _text
+			return _back, _text
+		end;
+	}
+end
