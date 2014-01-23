@@ -1,0 +1,8 @@
+return function(_text, _back)
+	return {
+		type = "lamp";
+		check = function(_text, _back)
+			return _text == _text, _back == _back
+		end;
+	}
+end
