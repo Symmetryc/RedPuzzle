@@ -1,11 +1,10 @@
-return function(_back, _text)
+return function(_color)
 	return {
 		type = "lamp";
-		text = _text;
-		back = _back;
-		char = "X";
-		power = function(self, _back, _text)
-			return self.text == _text and self.back == _back
+		color = _color;
+		char = "@";
+		power = function(self, _color, _side)
+			return _color == self.color
 		end;
 	}
 end

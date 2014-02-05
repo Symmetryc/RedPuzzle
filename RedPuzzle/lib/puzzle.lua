@@ -1,9 +1,9 @@
 return {
-  new = function(number w, number h)
-    return {
-      setTile(number x, number y, Tile tile) -> nil;
-      getTile(number x, number y) -> Tile tile;
-      runPuzzle() -> boolean success;
-    }
-  end;
+	new = function(Map map)
+		return {
+			map = Map map;
+			isPowered(number x, number y) -> table sides;
+			runPuzzle() -> boolean success;
+		}
+	end;
 }

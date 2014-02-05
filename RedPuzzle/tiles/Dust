@@ -1,12 +1,12 @@
-return function(_back, _text)
+return function(_color)
 	return {
 		type = "dust";
-		back = _back;
-		text = _text;
+		color = _color;
 		char = "+";
-		check = function(self, _back, _text)
-			self.back, self.text = _back, _text
-			return _back, _text
+		check = function(self, _color, _side)
+			local lr = _side.left or _side.right
+			local tb = _side.top or _side.bottom
+			self.char = lr and tb and "+" or lr and "-" or tb and "|" or "*"
 		end;
 	}
 end
