@@ -2,7 +2,7 @@ return function(_color)
 	return {
 		type = "dust";
 		color = _color;
-		char = "+";
+		char = "*";
 		check = function(self, _color, _side)
 			local lr = _side.left or _side.right
 			local tb = _side.top or _side.bottom
