@@ -1,7 +1,7 @@
 return {
-	new = function(Map map)
+	new = function(_map)
 		return {
-			map = Map map;
+			map = _map;
 			isPowered(number x, number y) -> table sides;
 			runPuzzle() -> boolean success;
 		}

@@ -1,0 +1,11 @@
+return {
+	torch = {
+		{color = colors.red, x = 1, y = 1};
+	};
+	lamp = {
+		{color = colors.red, x = 3, y = 1};
+	}
+	tools = {
+		dust = -1;
+	}
+}

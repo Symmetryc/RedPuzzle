@@ -1,0 +1,10 @@
+return function()
+	return {
+		type = "null";
+		color = colors.lightGray;
+		char = ".";
+		powered = function(self, _power)
+			return {}
+		end;
+	}
+end

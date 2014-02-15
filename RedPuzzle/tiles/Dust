@@ -1,12 +1,15 @@
-return function(_color)
+return function()
 	return {
 		type = "dust";
-		color = _color;
+		color = colors.red;
 		char = "*";
-		check = function(self, _color, _side)
-			local lr = _side.left or _side.right
-			local tb = _side.top or _side.bottom
-			self.char = lr and tb and "+" or lr and "-" or tb and "|" or "*"
+		powered = function(self, _power)
+			for k, v in pairs(_power)
+				if v == self.color then
+					return sides.set
+				end
+			end
+			return {}
 		end;
 	}
 end

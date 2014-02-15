@@ -1,10 +1,15 @@
-return function(_color)
+return function()
 	return {
 		type = "lamp";
-		color = _color;
+		color = colors.red;
 		char = "@";
-		power = function(self, _color, _side)
-			return _color == self.color
+		powered = function(self, _power)
+			for k, v in pairs(_power) do
+				if v == self.color then
+					return true
+				end
+			end
+			return false
 		end;
 	}
 end

@@ -1,0 +1,3 @@
+local path = ...
+local dir = shell.getRunningProgram()
+dir = dir:sub(#dir - #fs.getName(dir))

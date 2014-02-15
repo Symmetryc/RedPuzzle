@@ -1,0 +1,10 @@
+return function()
+	return {
+		type = "torch";
+		color = colors.red;
+		char = "i";
+		powered = function(self, _power)
+			return sides.set
+		end;
+	}
+end
