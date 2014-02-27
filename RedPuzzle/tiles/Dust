@@ -1,6 +1,5 @@
 return function()
 	return {
-		type = "dust";
 		color = colors.red;
 		char = "*";
 		powered = function(self, _power)

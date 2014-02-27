@@ -2,8 +2,17 @@ return {
 	new = function(_map)
 		return {
 			map = _map;
-			isPowered(number x, number y) -> table sides;
-			runPuzzle() -> boolean success;
+			isPowered = function(self, _x, _y)
+			end;
+			poweredLamp(self)
+				local lamp = self.map.lamp
+				for k, v in pairs(self:isPowered(lamp.x, lamp.y)) do
+					if v == lamp.color then
+						return true
+					end
+				end
+				return false
+			end;
 		}
 	end;
 }

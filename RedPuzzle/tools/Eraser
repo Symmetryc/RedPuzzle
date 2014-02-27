@@ -1,0 +1,3 @@
+return function(_tile)
+	return Null()
+end
