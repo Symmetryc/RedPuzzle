@@ -1,12 +1,9 @@
 return {
-	torch = {
-		{color = colors.red, x = 1, y = 1};
-	};
-	lamp = {
-		{color = colors.red, x = 3, y = 1};
-	};
+	torch = {color = colors.red, x = 1, y = 1};
+	lamp = {color = colors.red, x = 3, y = 1};
 	tools = {
 		Dust = -1;
 		Eraser = -1;
 	};
+	bound = {5, 5};
 }

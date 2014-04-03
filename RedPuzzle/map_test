@@ -1,3 +1,21 @@
-local path = ...
+local env = getfenv(0)
+local load = function(_path, _env)
+	return _env and setfenv(loadfile(_path), setmetatable(_env, {__index = env})) or loadfile(_path)
+end
+
 local dir = shell.getRunningProgram()
 dir = dir:sub(#dir - #fs.getName(dir))
+local lib = dir.."lib/"
+local tiles = dir.."tiles/"
+local map = dir.."maps/"..(...)
+local tools = dir.."tools/"
+local lib_env = {}
+
+local sides = load(lib.."sides.lua")()
+local render = load(lib.."render.lua")()
+lib_env.sides = sides
+for i, v in pairs()
+
+local puzzle = load(lib.."puzzle.lua", {sides = sides})()
+
+map = puzzle.new(load(map, {sides = sides}))
